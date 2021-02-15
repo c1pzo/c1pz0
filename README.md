@@ -92,9 +92,11 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
   `` 
 ## Compile and install C1pzo-Core
    
-``git clone https://github.com/c1pzo/c1pzo.git./autogen.sh
+``git clone https://github.com/c1pzo/c1pzo.git
+ 
+ ./autogen.sh
 
-  ./configure
+ ./configure
 
   make
    
