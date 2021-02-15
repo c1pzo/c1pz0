@@ -100,9 +100,10 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
 
   make
    
-  sudo make install``
-  
+  sudo make install
+  ``
  # RUN
+ 
  ``./c1pzod
-
+ ``
 
