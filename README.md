@@ -79,4 +79,30 @@ Translations are periodically pulled from Transifex and merged into the git repo
 pull from Transifex would automatically overwrite them again.
 
 Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/c1pzo-translators).
-# c1pzo
+## c1pzo
+
+
+
+
+#BUILD
+
+## build dependencies for C1pzo core.
+
+   sudo apt install -y git build-essential autoconf libtool pkg-config libdb++-dev libboost-all-dev libssl-dev libevent-dev
+   
+## Optional, install BerkeleyDB for wallet support.
+
+# Download and untar the package
+wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+tar -xvf db-4.8.30.NC.tar.gz
+# fix the bug on BerkeleyDB
+sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' db-4.8.30.NC/dbinc/atomic.h
+# Configure
+cd db-4.8.30.NC/build_unix
+mkdir -p build
+BDB_PREFIX=$(pwd)/build  # we will use this shell variable later
+../dist/configure --disable-shared --enable-cxx --with-pic --prefix=$BDB_PREFIX
+# Compile and install
+make
+sudo make install
+   
