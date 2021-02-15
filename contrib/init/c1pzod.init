@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+#  c1pzod The c1pzo core server.
+#
+#
+# chkconfig: 345 80 20
+# description: c1pzod
+# processname: c1pzod
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/c1pzod, see below
+if [ -f /etc/sysconfig/c1pzod ]; then
+        . /etc/sysconfig/c1pzod
+fi
+
+RETVAL=0
+
+prog=c1pzod
+# you can override the lockfile via C1PZOD_LOCKFILE in /etc/sysconfig/c1pzod
+lockfile=${C1PZOD_LOCKFILE-/var/lock/subsys/c1pzod}
+
+# c1pzod defaults to /usr/bin/c1pzod, override with C1PZOD_BIN
+c1pzod=${C1PZOD_BIN-/usr/bin/c1pzod}
+
+# c1pzod opts default to -disablewallet, override with C1PZOD_OPTS
+c1pzod_opts=${C1PZOD_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $c1pzod $c1pzod_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog -t600
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

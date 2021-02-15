@@ -1,0 +1,33 @@
+# /etc/conf.d/c1pzod: config file for /etc/init.d/c1pzod
+
+# Config file location
+#C1PZOD_CONFIGFILE="/etc/c1pzo/c1pzo.conf"
+
+# What directory to write pidfile to?  (created and owned by $C1PZOD_USER)
+#C1PZOD_PIDDIR="/var/run/c1pzod"
+
+# What filename to give the pidfile
+#C1PZOD_PIDFILE="${C1PZOD_PIDDIR}/c1pzod.pid"
+
+# Where to write c1pzod data (be mindful that the blockchain is large)
+#C1PZOD_DATADIR="/var/lib/c1pzod"
+
+# User and group to own c1pzod process
+#C1PZOD_USER="c1pzo"
+#C1PZOD_GROUP="c1pzo"
+
+# Path to c1pzod executable
+#C1PZOD_BIN="/usr/bin/c1pzod"
+
+# Nice value to run c1pzod under
+#C1PZOD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#C1PZOD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for c1pzod to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+C1PZOD_SIGTERM_TIMEOUT=600
