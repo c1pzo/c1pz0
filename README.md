@@ -94,6 +94,7 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
    
 ``git clone https://github.com/c1pzo/c1pzo.git
  ``
+ 
  ``./autogen.sh ``
 
 `` ./configure``
