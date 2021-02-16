@@ -52,8 +52,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "c1pzo core 2021";
-    const CScript genesisOutputScript = CScript() << ParseHex(" 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11f") << OP_CHECKSIG;
+    const char* pszTimestamp = "c1pzomsn.com";
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -110,8 +110,8 @@ public:
 
         genesis = CreateGenesisBlock(1613411891, 2463238421, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x00000fa99ba3d2b9e04b50ab9289024afc2d9636d779a70875486d97f0b8c999"));
-        //assert(genesis.hashMerkleRoot == uint256S("0xff339dadfcd9abca64fc287fe38a4bb374a96426a0ad24f0f5bc2a35"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000029ef9c7d718ba470cd5247cc01bcda1d40f3a3c3e3626de72e64cc0343e"));
+        assert(genesis.hashMerkleRoot == uint256S("7ade8dc97b74b94f38a7ccb322422b6438e47b06482338cd3117fd9fea0d8fd0"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -200,7 +200,7 @@ public:
         m_assumed_blockchain_size = 40;
         m_assumed_chain_state_size = 2;
 
-        genesis = CreateGenesisBlock(1613411891, 2463238421, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1529321830, 3787550, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         //assert(consensus.hashGenesisBlock == uint256S("0x0000000068b310d27d662c1cb24337694d93c8969a86326e9481f397e3e90358"));
         //assert(genesis.hashMerkleRoot == uint256S("0x82856fdab97ccfc61f8376080df886f233a3dacb8ed6d55ef693c41eecd2a807"));
