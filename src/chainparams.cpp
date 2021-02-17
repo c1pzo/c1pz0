@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "c1pzomsn.com";
+    const char* pszTimestamp = "tabarnak";
     const CScript genesisOutputScript = CScript() << ParseHex("41043e15ed02d213960a8d19c9bb61ea9139901ec78265ce2c081bd51dfd0b9f4854757d6d54eb571940353f9cd1532a7e5454941588dbcd5170ff4ce2b7a91b5484ac") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -84,12 +84,12 @@ public:
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 0; // February 15, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1613411891; // February 31, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 16135189971; // February 31, 2021
 
         // Deployment of Taproot (BIPs 340-342)
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 0; // febur 1, 2020
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1613411891; // December 31, 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1613518997; // December 31, 2020
 
         consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
         consensus.defaultAssumeValid = uint256S("0x0000000000000000000b9d2ec5a352ecba0592946514a92f14319dc2b367fc72"); // 654683
@@ -147,7 +147,7 @@ public:
 
         chainTxData = ChainTxData{
             // Data from RPC: getchaintxstats 4096 0000000000000000000b9d2ec5a352ecba0592946514a92f14319dc2b367fc72
-            /* nTime    */ 1613411891,
+            /* nTime    */ 1613518997,
             /* nTxCount */ 1,
             /* dTxRate  */ 3.508976121410527,
         };
@@ -181,12 +181,12 @@ public:
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 0; // February 15, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1613411891; // February 31, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1613518997; // February 31, 2021
 
         // Deployment of Taproot (BIPs 340-342)
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 0; // February 1, 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1613411891; //February 31, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1613518997; //February 31, 2021
 
         consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
         consensus.defaultAssumeValid = uint256S("0x000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0"); // 1864000
@@ -237,7 +237,7 @@ public:
 
         chainTxData = ChainTxData{
             // Data from RPC: getchaintxstats 4096 000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0
-            /* nTime    */ 1613411891,
+            /* nTime    */ 1613518997,
             /* nTxCount */ 1,
             /* dTxRate  */ 0.1232886622799463,
         };
@@ -265,7 +265,7 @@ public:
             m_assumed_chain_state_size = 0;
             chainTxData = ChainTxData{
                 // Data from RPC: getchaintxstats 4096 0000002a1de0f46379358c1fd09906f7ac59adf3712323ed90eb59e4c183c020
-                /* nTime    */ 1613411891,
+                /* nTime    */ 1613518997,
                 /* nTxCount */ 1,
                 /* dTxRate  */ 0.00159272030651341,
             };
@@ -313,7 +313,7 @@ public:
         consensus.powLimit = uint256S("00000377ae000000000000000000000000000000000000000000000000000000");
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2020
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1613518997; // December 31, 2020
 
         // Activation of Taproot (BIPs 340-342)
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 2;
@@ -397,9 +397,9 @@ public:
 
         UpdateActivationParametersFromArgs(args);
 
-        genesis = CreateGenesisBlock(1613411891, 2463238421,  0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1613518997, 2463238421,  0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000005fa8be0fa1c567c8ad97770fa87c762d2368bd342939f52c7abc9e79e7b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000004cdde1cacd3085c01f496018dad88d1b55c0469d55dfe2c6c7d11c86"));
         assert(genesis.hashMerkleRoot == uint256S("0x132742cd5fd7a865210e7f1914b68d8eaa9b6be687f2f2c8ff7e16e8b97d31ac"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
