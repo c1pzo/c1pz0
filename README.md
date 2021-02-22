@@ -132,6 +132,7 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
    
   ``sudo make install
   ``
+  
 `` reboot
  ``
  # RUN
