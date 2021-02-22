@@ -3,13 +3,13 @@ C1pzo Core integration/staging tree
 
 ![alt text](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1core.jpg)
 
-![c1core](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1core.jpg)
+![c1](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png)
 
 <p align="center">
-<img src="https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1core.jpg" height="500">
+<img src="https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png" height="500">
 </p>
 
-![Screenshot](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1core.jpg "Main Window")
+![c1](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png "Main Window")
 
 What is C1pzo?
 ----------------
