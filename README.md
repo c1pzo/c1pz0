@@ -114,13 +114,13 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
 ``git clone https://github.com/c1pzo/c1pzo.git
  ``
  
- ``./autogen.sh ``
- 
+ ``./autogen.sh 
+ ``
  
 ``export CPATH=/usr/local/BerkeleyDB.5.1/include
 ``
 
-` export LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
+`` export LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
 ``
 
 ``export LD_LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
