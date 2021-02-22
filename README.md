@@ -118,8 +118,12 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
  
  
 ``export CPATH=/usr/local/BerkeleyDB.5.1/include
+``
+
 ` export LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
-  export LD_LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
+``
+
+``export LD_LIBRARY_PATH=/usr/local/BerkeleyDB.5.1/lib
  ``
 
 `` ./configure`` `` --with-incompatible-bdb ``
