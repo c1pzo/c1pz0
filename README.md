@@ -1,8 +1,8 @@
 C1pzo Core integration/staging tree
 =====================================
 
+<img align="right" width="150" height="150" src=" https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/c1core.jpg">
 
- ![c1core] https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/c1core.jpg
 
 
 What is C1pzo?
