@@ -100,7 +100,7 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
 ``cd db-5.1.29/
 ``
 
-`` cd db-5.1.29/build_unix
+`` cd build_unix
 ``
 
 `` ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
