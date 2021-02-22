@@ -90,16 +90,22 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
 
  `` sudo apt install -y git build-essential autoconf libtool pkg-config libdb++-dev libboost-all-dev libssl-dev libevent-dev
 `` 
+
 ``wget http://download.oracle.com/berkeley-db/db-5.1.29.tar.gz
  ``
+ 
 `` tar -zxvf db-5.1.29.tar.gz
 ``
+
 ``cd db-5.1.29/
 ``
+
 `` cd db-5.1.29/build_unix
 ``
+
 `` ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 ``
+
 `` make install 
  ``
   
