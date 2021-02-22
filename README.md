@@ -2,11 +2,28 @@ C1pzo Core integration/staging tree
 =====================================
 
 
-       ____                     
-.----.|_   | .-----.-----.-----.
-|  __| _|  |_|  _  |-- __|  _  |
-|____||______|   __|_____|_____|
-             |__|  
+                      1111111                                                        
+                     1::::::1                                                        
+                    1:::::::1                                                        
+                    111:::::1                                                        
+    cccccccccccccccc   1::::1  ppppp   ppppppppp   zzzzzzzzzzzzzzzzz   ooooooooooo   
+  cc:::::::::::::::c   1::::1  p::::ppp:::::::::p  z:::::::::::::::z oo:::::::::::oo 
+ c:::::::::::::::::c   1::::1  p:::::::::::::::::p z::::::::::::::z o:::::::::::::::o
+c:::::::cccccc:::::c   1::::l  pp::::::ppppp::::::pzzzzzzzz::::::z  o:::::ooooo:::::o
+c::::::c     ccccccc   1::::l   p:::::p     p:::::p      z::::::z   o::::o     o::::o
+c:::::c                1::::l   p:::::p     p:::::p     z::::::z    o::::o     o::::o
+c:::::c                1::::l   p:::::p     p:::::p    z::::::z     o::::o     o::::o
+c::::::c     ccccccc   1::::l   p:::::p    p::::::p   z::::::z      o::::o     o::::o
+c:::::::cccccc:::::c111::::::111p:::::ppppp:::::::p  z::::::zzzzzzzzo:::::ooooo:::::o
+ c:::::::::::::::::c1::::::::::1p::::::::::::::::p  z::::::::::::::zo:::::::::::::::o
+  cc:::::::::::::::c1::::::::::1p::::::::::::::pp  z:::::::::::::::z oo:::::::::::oo 
+    cccccccccccccccc111111111111p::::::pppppppp    zzzzzzzzzzzzzzzzz   ooooooooooo   
+                                p:::::p                                              
+                                p:::::p                                              
+                               p:::::::p                                             
+                               p:::::::p                                             
+                               p:::::::p                                             
+                               ppppppppp     
 
 
 What is C1pzo?
