@@ -97,7 +97,7 @@ Translators should also subscribe to the [mailing list](https://groups.google.co
 `` tar -zxvf db-5.1.29.tar.gz
 ``
 
-``cd db-5.1.29/
+``cd db-5.1.29
 ``
 
 `` cd build_unix
