@@ -5,13 +5,7 @@ C1pzo Core integration/staging tree
 
 ![alt text](https://github.com/c1pzo/c1pzo/blob/Master/src/qt/res/icons/c1.png?raw=true)
 
-![c1](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png)
 
-<p align="center">
-<img src="https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png" height="500">
-</p>
-
-![c1](https://github.com/c1pzo/c1pzo/tree/Master/src/qt/res/icons/c1.png "Main Window")
 
 What is C1pzo?
 ----------------
